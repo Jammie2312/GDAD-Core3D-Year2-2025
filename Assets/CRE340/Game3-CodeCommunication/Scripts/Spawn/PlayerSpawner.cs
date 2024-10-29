@@ -10,7 +10,7 @@ public class PlayerSpawner : MonoBehaviour
     {
         Invoke("SpawnPlayer", spawnDelay); // Delay the player spawn by 2 seconds
     }
-    public void SpawnPlayer()
+    private void SpawnPlayer()
     {
         // Call the SpawnPlayer method from the GameManager
         GameManager.Instance.SpawnPlayer(spawnPosition);

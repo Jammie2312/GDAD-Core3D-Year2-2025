@@ -1090,7 +1090,7 @@ MonoBehaviour:
   isOn: 0
   lightSource: {fileID: 1904003790}
   clickSound: {fileID: 1825349319}
-  IntenseSound: {fileID: 1825349320}
+  SizzSound: {fileID: 1825349320}
   failSafe: 0
 --- !u!82 &1825349319
 AudioSource:
@@ -1198,7 +1198,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4f7c7b3cf9bd3fd4994173a6432c3e31, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb52ad6d5053ccd499f7e7b7e5dd5e28, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

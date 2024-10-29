@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
@@ -9,8 +10,13 @@ public class Flashlight : MonoBehaviour
     public bool isOn = false;
     public GameObject lightSource;
     public AudioSource clickSound;
-    public AudioSource IntenseSound;
+    public AudioSource SizzSound;
     public bool failSafe = false;
+
+    private void Start()
+    {
+        Invoke("SpawnDelay", 1);
+    }
 
     void Update()
     {
@@ -33,16 +39,30 @@ public class Flashlight : MonoBehaviour
                 StartCoroutine(FailSafe());
             }
         }
+        if (Input.GetButtonDown("LightOnOff"))
+        {
+            if (isOn == true && failSafe == false)
+            { 
+                failSafe = true;
+                SizzSound.Play();
+                isOn = true;
+                StartCoroutine(FailSafe());
+            }
+        }
         if (Input.GetButtonDown("Intense"))
         {
-            IntenseSound.Play();
-            if (lightSource == true)
-            {
-                
-            }
+            
         }
     }
 
+    void start()
+    {
+        Invoke("SpawnDelay", 2);
+    }
+    private void SpawnDelay()
+    {
+        SizzSound.Play();
+    }
     IEnumerator FailSafe()
     {
         yield return new WaitForSeconds(0.1f);
