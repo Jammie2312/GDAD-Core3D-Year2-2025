@@ -11,6 +11,8 @@ public class Shoot : MonoBehaviour
 
     private float lastShootTime = -100f; // Initialize to a low value
 
+    public AudioSource bulletSound;
+
     void Start()
     {
         // If no bullet spawn point is assigned, create a new one
@@ -51,6 +53,8 @@ public class Shoot : MonoBehaviour
 
         // Update the last shoot time to enforce cooldown
         lastShootTime = Time.time;
+
+        bulletSound.Play();
     }
 
     private void FireEffects(){

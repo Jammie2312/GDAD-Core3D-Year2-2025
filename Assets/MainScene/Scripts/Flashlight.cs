@@ -17,7 +17,6 @@ public class Flashlight : MonoBehaviour
     {
         Invoke("SpawnDelay", 1);
     }
-
     void Update()
     {
         if (Input.GetButtonDown("LightOnOff"))
@@ -54,11 +53,11 @@ public class Flashlight : MonoBehaviour
             
         }
     }
-
     void start()
     {
         Invoke("SpawnDelay", 2);
     }
+
     private void SpawnDelay()
     {
         SizzSound.Play();

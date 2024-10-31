@@ -9,6 +9,8 @@ public class ExplodingCrate : MonoBehaviour, IDamagable
     private Material mat;
     private Color originalColor;
 
+    public AudioSource explodeCreate;
+
     private void Start()
     {
         mat = GetComponent<Renderer>().material;
@@ -39,6 +41,7 @@ public class ExplodingCrate : MonoBehaviour, IDamagable
             // Trigger the OnObjectDestroyed event
             HealthEventManager.OnObjectDestroyed?.Invoke(gameObject.name, health);
             Destroy(gameObject);
+            explodeCreate.Play();
         }
     }
 
