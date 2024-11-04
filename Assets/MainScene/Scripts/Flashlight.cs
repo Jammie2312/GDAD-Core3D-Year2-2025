@@ -8,7 +8,8 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
     public bool isOn = false;
-    public GameObject lightSource;
+    public GameObject lightSource1;
+    public GameObject lightSource2;
     public AudioSource clickSound;
     public AudioSource SizzSound;
     public bool failSafe = false;
@@ -24,34 +25,28 @@ public class Flashlight : MonoBehaviour
             if (isOn == false && failSafe == false)
             {
                 failSafe = true;
-                lightSource.SetActive(true);
+                lightSource1.SetActive(true);
                 clickSound.Play();
                 isOn = true;
                 StartCoroutine(FailSafe());
+                if (Input.GetButtonDown("Intense"))
+                {
+                    Debug.Log("Light");
+                    lightSource2.SetActive(true);
+                    SizzSound.Play();
+                }
             }
             if (isOn == true && failSafe == false)
             {
                 failSafe = true;
-                lightSource.SetActive(false);
+                lightSource1.SetActive(false);
                 clickSound.Play();
                 isOn = false;
                 StartCoroutine(FailSafe());
             }
+
         }
-        if (Input.GetButtonDown("LightOnOff"))
-        {
-            if (isOn == true && failSafe == false)
-            { 
-                failSafe = true;
-                SizzSound.Play();
-                isOn = true;
-                StartCoroutine(FailSafe());
-            }
-        }
-        if (Input.GetButtonDown("Intense"))
-        {
-            
-        }
+
     }
     void start()
     {
