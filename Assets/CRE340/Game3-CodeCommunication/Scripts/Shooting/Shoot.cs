@@ -11,8 +11,6 @@ public class Shoot : MonoBehaviour
 
     private float lastShootTime = -100f; // Initialize to a low value
 
-    public AudioSource bulletSound;
-
     void Start()
     {
         // If no bullet spawn point is assigned, create a new one
@@ -53,15 +51,12 @@ public class Shoot : MonoBehaviour
 
         // Update the last shoot time to enforce cooldown
         lastShootTime = Time.time;
-
-        bulletSound.Play();
     }
 
     private void FireEffects(){
-        //TODO - add a muzzle flash effect when shooting?? - some other time
+        //TODO - add a muzzle flash effect when shooting??
         
         //TODO - add a camera shake effect when shooting
-        
-        
+        FeedbackEventManager.ShakeCamera(5f, 1f, 0.25f);
     }
 }
