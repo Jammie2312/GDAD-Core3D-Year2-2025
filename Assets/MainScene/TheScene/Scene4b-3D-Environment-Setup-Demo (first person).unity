@@ -1088,7 +1088,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 0
-  lightSource: {fileID: 1904003790}
+  lightSource1: {fileID: 1904003790}
+  lightSource2: {fileID: 0}
   clickSound: {fileID: 1825349319}
   SizzSound: {fileID: 1825349320}
   failSafe: 0
