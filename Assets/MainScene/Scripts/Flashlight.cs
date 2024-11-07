@@ -76,12 +76,4 @@ public class Flashlight : MonoBehaviour
         failSafe = false;
 
     }
-
-    void OnTriggerStay(UnityEngine.Collider other)
-    {
-        if (other.gameObject.tag == "Enemy" && flashlight == true)
-        {
-            Destroy(other.gameObject);
-        }
-    }
 }
