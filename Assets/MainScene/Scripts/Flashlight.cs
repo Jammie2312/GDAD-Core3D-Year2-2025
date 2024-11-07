@@ -18,7 +18,7 @@ public class Flashlight : MonoBehaviour
     public float failsafeDuration = 1f; // Cooldown in seconds between shots
     private float lastFlashTime = -100f; // Initialize to a low value
 
-    void Update()
+    public void Update()
     {
         //flashlight
         if (Input.GetButtonDown("LightOnOff"))
@@ -59,9 +59,10 @@ public class Flashlight : MonoBehaviour
                 StartCoroutine(FailSafe());
             }
         }
+
     }
 
-    IEnumerator FailSafe()
+    public IEnumerator FailSafe()
     {
         yield return new WaitForSeconds(failsafeDuration);
 
@@ -74,5 +75,13 @@ public class Flashlight : MonoBehaviour
         flashlight = false;
         failSafe = false;
 
+    }
+
+    void OnTriggerStay(UnityEngine.Collider other)
+    {
+        if (other.gameObject.tag == "Enemy" && flashlight == true)
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
