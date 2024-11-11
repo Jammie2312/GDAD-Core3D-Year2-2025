@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -62,6 +64,19 @@ public class Flashlight : MonoBehaviour
 
     }
 
+    //public bool ExtraCheck(bool flight)
+    //{
+    //    if (flight == false)
+    //    {
+    //        flight = true;
+    //    }
+    //    else
+    //    {
+    //        flight = false;
+    //    }
+    //    return flight;
+    //}
+
     public IEnumerator FailSafe()
     {
         yield return new WaitForSeconds(failsafeDuration);
@@ -74,6 +89,5 @@ public class Flashlight : MonoBehaviour
         lightSource1.SetActive(false);
         flashlight = false;
         failSafe = false;
-
     }
 }
