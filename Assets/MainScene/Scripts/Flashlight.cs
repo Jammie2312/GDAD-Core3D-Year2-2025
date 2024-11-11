@@ -15,6 +15,7 @@ public class Flashlight : MonoBehaviour
     public AudioSource clickSound;
     public AudioSource SizzSound;
     public bool failSafe = false;
+    public GameObject Cube;
 
     [Range(0f, 5f)]
     public float failsafeDuration = 1f; // Cooldown in seconds between shots
@@ -89,5 +90,12 @@ public class Flashlight : MonoBehaviour
         lightSource1.SetActive(false);
         flashlight = false;
         failSafe = false;
+    }
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy" && flashlight == true)
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
