@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 189863285}
   - component: {fileID: 189863287}
   - component: {fileID: 189863288}
+  - component: {fileID: 189863289}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -382,13 +383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefabs:
   - {fileID: 5153894257583250854, guid: 065a19eb99dc43c4e92587f8bc142f46, type: 3}
-  - {fileID: 4293011047966659804, guid: b9ae169f53b86fe46b65b34e07985ebd, type: 3}
-  - {fileID: 3558379014972084002, guid: 754a144ea8d54764c8c7888e18b0156b, type: 3}
   spawnArea: {x: 22, y: 0, z: 22}
   startDelay: 2
-  minSpawnInterval: 0.5
-  maxSpawnInterval: 2
-  maxSpawnedObjects: 100
+  minSpawnInterval: 2
+  maxSpawnInterval: 4
+  maxSpawnedObjects: 50
   spawnedObjects: []
 --- !u!4 &189863286
 Transform:
@@ -441,6 +440,26 @@ MonoBehaviour:
   maxSpawnInterval: 20
   maxSpawnedObjects: 8
   spawnedObjects: []
+--- !u!114 &189863289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189863284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6771f370410d12c42b800ac65828b340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTypes:
+  - {fileID: 11400000, guid: 16c7590885f0fcf479df9d7f69ddbd61, type: 2}
+  - {fileID: 11400000, guid: 99c209bf67f8d1f488724bed53e21e1b, type: 2}
+  spawnArea: {x: 20, y: 0, z: 20}
+  startDelay: 2
+  minSpawnInterval: 0.5
+  maxSpawnInterval: 3
+  maxSpawnedObjects: 100
 --- !u!1 &223660204
 GameObject:
   m_ObjectHideFlags: 0
