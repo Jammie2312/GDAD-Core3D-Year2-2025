@@ -21,23 +21,24 @@ public class CollisionScript : MonoBehaviour
         //Flashlight flashlight = new Flashlight();
         //flashlight.ExtraCheck(LightOn);
         //*&& LightOn == true*
-        if (Input.GetKey(KeyCode.F))
-        {
-            Debug.Log("CheckStarterLight");
-            light1 = true;
-        }
+
+        //if (Input.GetKey(KeyCode.F))
+        //{
+        //    Debug.Log("CheckStarterLight");
+        //    light1 = true;
+        //}
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("SecondaryStarterLight");
             light1 = false;
             light2 = true;
         }
-        if (other.gameObject.tag == "Enemy" && light1 == true)
-        {
-            Destroy(other.gameObject);
-            light1 = false;
-            light2 = false;
-        }
+        //if (other.gameObject.tag == "Enemy" && light1 == true)
+        //{
+        //    Destroy(other.gameObject);
+        //    light1 = false;
+        //    light2 = false;
+        //}
         if (other.gameObject.tag == "Enemy" && light2 == true)
         {
             Destroy(other.gameObject);

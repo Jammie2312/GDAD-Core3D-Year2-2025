@@ -30,7 +30,7 @@ Material:
     - _DissolveAmount: 0
     - _QueueControl: 0
     m_Colors:
-    - _DissolveColour: {r: 1, g: 0.32257718, b: 0, a: 0}
+    - _DissolveColour: {r: 2, g: 0.06481691, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &681687814003060693
 MonoBehaviour:
