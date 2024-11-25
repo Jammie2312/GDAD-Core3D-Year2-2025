@@ -65,19 +65,6 @@ public class Flashlight : MonoBehaviour
 
     }
 
-    //public bool ExtraCheck(bool flight)
-    //{
-    //    if (flight == false)
-    //    {
-    //        flight = true;
-    //    }
-    //    else
-    //    {
-    //        flight = false;
-    //    }
-    //    return flight;
-    //}
-
     public IEnumerator FailSafe()
     {
         yield return new WaitForSeconds(failsafeDuration);
@@ -91,11 +78,4 @@ public class Flashlight : MonoBehaviour
         flashlight = false;
         failSafe = false;
     }
-    //void OnTriggerStay(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Enemy" && flashlight == true)
-    //    {
-    //        Destroy(other.gameObject);
-    //    }
-    //}
 }
