@@ -1469,8 +1469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6028312566516f43aaa494eb42430a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 100
-  TakeDamage: 10
   light1: 0
   light2: 0
 --- !u!1001 &472299567
@@ -1979,6 +1977,8 @@ GameObject:
   - component: {fileID: 583258502}
   - component: {fileID: 583258504}
   - component: {fileID: 583258503}
+  - component: {fileID: 583258506}
+  - component: {fileID: 583258505}
   m_Layer: 0
   m_Name: vfxgraph_CharacterDissolve
   m_TagString: Untagged
@@ -1995,7 +1995,7 @@ Transform:
   m_GameObject: {fileID: 583258501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.52, y: -0.14826047, z: 0.02}
+  m_LocalPosition: {x: 0.008, y: -3.489, z: 0.02}
   m_LocalScale: {x: 3.407112, y: 3.407112, z: 3.407112}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2062,7 +2062,16 @@ VisualEffect:
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: -0, y: 0, z: 0}
+        m_Name: Transform_angles
+        m_Overridden: 1
+      - m_Value: {x: 2.462348, y: -0.98051935, z: 7.2890697}
+        m_Name: Transform_position
+        m_Overridden: 1
+      - m_Value: {x: 3.407112, y: 3.407112, z: 3.407112}
+        m_Name: Transform_scale
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -2076,9 +2085,43 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 126149325}
+        m_Name: SkinnedMeshRenderer
+        m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!114 &583258505
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583258501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 583258502}
+--- !u!114 &583258506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583258501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 583258505}
+  m_VisualEffect: {fileID: 583258504}
 --- !u!1001 &604700780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5157,8 +5200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6028312566516f43aaa494eb42430a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: 100
-  TakeDamage: 10
   light1: 0
   light2: 0
 --- !u!54 &1661143907

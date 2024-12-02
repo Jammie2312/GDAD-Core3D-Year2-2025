@@ -10,9 +10,6 @@ using UnityEngine.Rendering.Universal;
 
 public class CollisionScript : MonoBehaviour
 {
-    //public bool LightOn = false;
-    public int EnemyHealth = 100;
-    public int TakeDamage = 10;
     public bool light1 = false;    
     public bool light2 = false;
 
@@ -27,7 +24,7 @@ public class CollisionScript : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy" && light2 == true)
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             light1 = false;
             light2 = false;
         }
