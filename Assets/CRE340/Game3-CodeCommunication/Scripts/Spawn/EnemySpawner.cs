@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     public int maxSpawnedObjects = 100;  // Maximum number of spawned objects
     public LayerMask playerLayer;        // Layer mask to identify the player
 
-    //private List<EnemyBase> spawnedEnemies = new List<EnemyBase>();
+    private List<EnemyBase> spawnedEnemies = new List<EnemyBase>();
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(startDelay);
 
         // Repeatedly spawn enemies at random intervals
-        //while (spawnedEnemies.Count < maxSpawnedObjects)
+        while (spawnedEnemies.Count < maxSpawnedObjects)
         {
             if (IsPlayerInArea())
             {
@@ -59,11 +59,11 @@ public class EnemySpawner : MonoBehaviour
         ) + transform.position;
 
         // Use the factory to create the enemy
-        //EnemyBase enemy = EnemyFactory.CreateEnemy(selectedEnemyData, randomPosition);
+        EnemyBase enemy = EnemyFactory.CreateEnemy(selectedEnemyData, randomPosition);
 
-        //if (enemy != null)
+        if (enemy != null)
         {
-            //spawnedEnemies.Add(enemy);
+            spawnedEnemies.Add(enemy);
         }
     }
 
