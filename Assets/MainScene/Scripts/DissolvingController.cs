@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal.Internal;
 
 public class DissolvingController : MonoBehaviour
 {
     public SkinnedMeshRenderer skinnedMesh;
     public float dissolveRate = 0.0125f;
     public float refreshRate = 0.025f;
+    public int mainLight;
 
     private Material[] skinnedMaterials; 
     // Start is called before the first frame update
@@ -19,7 +21,7 @@ public class DissolvingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown (KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(DissolveCo());
         }
