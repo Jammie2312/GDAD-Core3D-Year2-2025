@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.34
@@ -140,6 +140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3477203725378770397, guid: 9f9bac2bf3030b0439706f487659e3b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4254303996877836135, guid: 9f9bac2bf3030b0439706f487659e3b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,6 +218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652207577002842052, guid: b59cbd86aca4971449bf09c19f408f2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3424239925404028286, guid: b59cbd86aca4971449bf09c19f408f2e,
         type: 3}
@@ -298,6 +308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave12 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6123801812386100255, guid: 2b3bbfb616deb9f4ebb0c278e6d18cfe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6897207720804019877, guid: 2b3bbfb616deb9f4ebb0c278e6d18cfe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -377,6 +392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave8 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799414267125759215, guid: b85591a506aa1ca4f917a9609cc62f82,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3283780387301533269, guid: b85591a506aa1ca4f917a9609cc62f82,
         type: 3}
@@ -514,6 +534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2555352413405436104, guid: 3410fe058b03f6544a51196feb5df00c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2899684668293481074, guid: 3410fe058b03f6544a51196feb5df00c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -643,6 +668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5204624121627716598, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5997236008513636899, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -671,6 +701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652207577002842052, guid: b59cbd86aca4971449bf09c19f408f2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3424239925404028286, guid: b59cbd86aca4971449bf09c19f408f2e,
         type: 3}
@@ -918,6 +953,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345070700331616360, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.786386
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345070700331616360, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01893193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345070700331616360, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.786386
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345070700331616360, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345070700331616360, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -985,6 +1040,8 @@ PrefabInstance:
     - {fileID: 1740817458727708515, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
     - {fileID: 3989317406124234269, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
     - {fileID: 4918499915152233632, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
+    - {fileID: 8761154363059568735, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
+    - {fileID: 5149127239039682844, guid: 09aade0ecefd01e4b8f7661acf64f5c2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8345070699079395523, guid: 09aade0ecefd01e4b8f7661acf64f5c2,
@@ -1062,6 +1119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave7 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668648533715950641, guid: eb6ec0f240ab7904a9a32d306650469b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4153014623610979979, guid: eb6ec0f240ab7904a9a32d306650469b,
         type: 3}
@@ -1187,6 +1249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5204624121627716598, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5997236008513636899, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1248,6 +1315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave8 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799414267125759215, guid: b85591a506aa1ca4f917a9609cc62f82,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3283780387301533269, guid: b85591a506aa1ca4f917a9609cc62f82,
         type: 3}
@@ -1471,10 +1543,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light1: 0
   light2: 0
+  growlSound: {fileID: 0}
   skinnedMesh: {fileID: 0}
   dissolveRate: 0.0125
   refreshRate: 0.025
   mainLight: 0
+  _animator: {fileID: 0}
+  playerTransform: {fileID: 0}
 --- !u!1001 &472299567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1486,6 +1561,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1564,6 +1643,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1718,6 +1801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215524695586645907, guid: eb0f0b6b32ad7d34fa85e9dcfa9f46e2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2171,6 +2259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3216381
@@ -2237,6 +2329,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604700780}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &678934649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678934651}
+  - component: {fileID: 678934650}
+  m_Layer: 0
+  m_Name: NavMech
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &678934650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678934649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 55
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.11666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: f2ef3dbb8c773fa419bf3cbcaabcd332, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &678934651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678934649}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5397758, y: 0.476, z: 7.411783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &700346415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave11
       objectReference: {fileID: 0}
+    - target: {fileID: 4238518675741935440, guid: 8f3dc99490e1dbf4d9b2514dab0f7226,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2638,6 +2798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3216381
@@ -2767,6 +2931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave9 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5527805166191247851, guid: 6e360a62acd35c9449183c1bd5504098,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6320320434563293246, guid: 6e360a62acd35c9449183c1bd5504098,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2795,6 +2964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652207577002842052, guid: b59cbd86aca4971449bf09c19f408f2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3424239925404028286, guid: b59cbd86aca4971449bf09c19f408f2e,
         type: 3}
@@ -2906,6 +3080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668648533715950641, guid: eb6ec0f240ab7904a9a32d306650469b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4153014623610979979, guid: eb6ec0f240ab7904a9a32d306650469b,
         type: 3}
@@ -3034,6 +3213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477203725378770397, guid: 9f9bac2bf3030b0439706f487659e3b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4254303996877836135, guid: 9f9bac2bf3030b0439706f487659e3b7,
         type: 3}
@@ -3282,6 +3466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave11 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4238518675741935440, guid: 8f3dc99490e1dbf4d9b2514dab0f7226,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3360,6 +3549,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave11 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238518675741935440, guid: 8f3dc99490e1dbf4d9b2514dab0f7226,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3440,6 +3634,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave6
       objectReference: {fileID: 0}
+    - target: {fileID: 2165754370930130063, guid: 2afc9e68383e2b143b91f61d2333f251,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3462,6 +3661,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3668,6 +3871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.92549896
@@ -3682,7 +3889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.88548183
+      value: 0.921
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3806,6 +4013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave9 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5527805166191247851, guid: 6e360a62acd35c9449183c1bd5504098,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6320320434563293246, guid: 6e360a62acd35c9449183c1bd5504098,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3854,6 +4066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555352413405436104, guid: 3410fe058b03f6544a51196feb5df00c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2899684668293481074, guid: 3410fe058b03f6544a51196feb5df00c,
         type: 3}
@@ -3984,6 +4201,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave5
       objectReference: {fileID: 0}
+    - target: {fileID: 5204624121627716598, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5997236008513636899, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4017,6 +4239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477203725378770397, guid: 9f9bac2bf3030b0439706f487659e3b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4254303996877836135, guid: 9f9bac2bf3030b0439706f487659e3b7,
         type: 3}
@@ -4090,6 +4317,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
@@ -4255,6 +4486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1794
@@ -4342,6 +4577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0171
@@ -4399,7 +4638,7 @@ PrefabInstance:
     - target: {fileID: 955394162340613868, guid: 3da074a71c3410243bdd84d882fac08a,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.21677074
+      value: 0.18795213
       objectReference: {fileID: 0}
     - target: {fileID: 955394162340613868, guid: 3da074a71c3410243bdd84d882fac08a,
         type: 3}
@@ -4409,7 +4648,7 @@ PrefabInstance:
     - target: {fileID: 955394162340613868, guid: 3da074a71c3410243bdd84d882fac08a,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.053496778
+      value: 0.039087474
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4565,6 +4804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Graveyard_wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3216381
@@ -4648,6 +4891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123801812386100255, guid: 2b3bbfb616deb9f4ebb0c278e6d18cfe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6897207720804019877, guid: 2b3bbfb616deb9f4ebb0c278e6d18cfe,
         type: 3}
@@ -4772,6 +5020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527805166191247851, guid: 6e360a62acd35c9449183c1bd5504098,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6320320434563293246, guid: 6e360a62acd35c9449183c1bd5504098,
         type: 3}
@@ -5088,6 +5341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave3
       objectReference: {fileID: 0}
+    - target: {fileID: 3477203725378770397, guid: 9f9bac2bf3030b0439706f487659e3b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4254303996877836135, guid: 9f9bac2bf3030b0439706f487659e3b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5161,6 +5419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652207577002842052, guid: b59cbd86aca4971449bf09c19f408f2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3424239925404028286, guid: b59cbd86aca4971449bf09c19f408f2e,
         type: 3}
@@ -5240,6 +5503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555352413405436104, guid: 3410fe058b03f6544a51196feb5df00c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2899684668293481074, guid: 3410fe058b03f6544a51196feb5df00c,
         type: 3}
@@ -5369,10 +5637,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light1: 0
   light2: 0
-  skinnedMesh: {fileID: 0}
+  growlSound: {fileID: 1661143913}
+  skinnedMesh: {fileID: 126149325}
   dissolveRate: 0.0125
   refreshRate: 0.025
   mainLight: 0
+  _animator: {fileID: 1661143904}
+  playerTransform: {fileID: 1825349321}
 --- !u!54 &1661143907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5396,7 +5667,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5410,18 +5681,18 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 1.2
+  m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 3
 --- !u!4 &1661143910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8510460375571080315, guid: 394afd8e0d7d57a4189afcf2b435e114,
@@ -5445,6 +5716,210 @@ MonoBehaviour:
   refreshRate: 0.025
   mainLight: 0
   skinnedMaterials: []
+--- !u!114 &1661143912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661143902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf72236efa2daa42848aa980ba79a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1661143913
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661143902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 97485edce7ec8174c8c03e18e5852282, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1661143914
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661143902}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 902193f28b9ac974dbf42bc311423ea5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1710940375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5456,6 +5931,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalScale.x
@@ -5543,6 +6022,10 @@ PrefabInstance:
     - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_Name
       value: Graveyard_wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573284199375500, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4244268427382144, guid: 3da074a71c3410243bdd84d882fac08a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5683,7 +6166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1814209213}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5750,7 +6233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819462500}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5801,6 +6284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668648533715950641, guid: eb6ec0f240ab7904a9a32d306650469b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4153014623610979979, guid: eb6ec0f240ab7904a9a32d306650469b,
         type: 3}
@@ -6080,6 +6568,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1825349321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    type: 3}
+  m_PrefabInstance: {fileID: 778070271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1861095643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6092,6 +6586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555352413405436104, guid: 3410fe058b03f6544a51196feb5df00c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2899684668293481074, guid: 3410fe058b03f6544a51196feb5df00c,
         type: 3}
@@ -6275,6 +6774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555352413405436104, guid: 3410fe058b03f6544a51196feb5df00c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2899684668293481074, guid: 3410fe058b03f6544a51196feb5df00c,
         type: 3}
@@ -6841,6 +7345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2165754370930130063, guid: 2afc9e68383e2b143b91f61d2333f251,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6920,6 +7429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave6 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2165754370930130063, guid: 2afc9e68383e2b143b91f61d2333f251,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6948,6 +7462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave7 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668648533715950641, guid: eb6ec0f240ab7904a9a32d306650469b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4153014623610979979, guid: eb6ec0f240ab7904a9a32d306650469b,
         type: 3}
@@ -7130,6 +7649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grave6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165754370930130063, guid: 2afc9e68383e2b143b91f61d2333f251,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7360,6 +7884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grave5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5204624121627716598, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 5997236008513636899, guid: 9baa8ab1461320b46b3c8b4c0b0cfcb8,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7422,7 +7951,7 @@ PrefabInstance:
     - target: {fileID: 8510460375571080315, guid: 394afd8e0d7d57a4189afcf2b435e114,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.46
+      value: -1.065
       objectReference: {fileID: 0}
     - target: {fileID: 8510460375571080315, guid: 394afd8e0d7d57a4189afcf2b435e114,
         type: 3}
@@ -7432,7 +7961,7 @@ PrefabInstance:
     - target: {fileID: 8510460375571080315, guid: 394afd8e0d7d57a4189afcf2b435e114,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.2832
+      value: 11.999
       objectReference: {fileID: 0}
     - target: {fileID: 8510460375571080315, guid: 394afd8e0d7d57a4189afcf2b435e114,
         type: 3}
@@ -7501,11 +8030,24 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1661143911}
+    - targetCorrespondingSourceObject: {fileID: 4629809577412875880, guid: 394afd8e0d7d57a4189afcf2b435e114,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1661143912}
+    - targetCorrespondingSourceObject: {fileID: 4629809577412875880, guid: 394afd8e0d7d57a4189afcf2b435e114,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1661143913}
+    - targetCorrespondingSourceObject: {fileID: 4629809577412875880, guid: 394afd8e0d7d57a4189afcf2b435e114,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1661143914}
   m_SourcePrefab: {fileID: 100100000, guid: 394afd8e0d7d57a4189afcf2b435e114, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 678934651}
   - {fileID: 418530105}
   - {fileID: 832575519}
   - {fileID: 557391539}

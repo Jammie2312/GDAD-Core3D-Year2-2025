@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.InputSystem.Android;
 using UnityEngine.Rendering.Universal;
@@ -22,14 +24,23 @@ public class CollisionScript : MonoBehaviour
 
     private Material[] skinnedMaterials;
 
+    public Animator _animator;
+
+
+    public Transform playerTransform;
+    NavMeshAgent agent;
+
     void Start()
     {
         if (skinnedMesh != null)
             skinnedMaterials = skinnedMesh.materials;
+
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(DissolveCo());
@@ -60,6 +71,7 @@ public class CollisionScript : MonoBehaviour
         if (skinnedMaterials.Length > 0)
         {
             growlSound.Play();
+            _animator.Play("Z_FallingForward");
             float counter = 0;
             while (skinnedMaterials[0].GetFloat("_DissolveAmount") < 1)
             {
