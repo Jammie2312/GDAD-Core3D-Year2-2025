@@ -45,6 +45,7 @@ public class CollisionScript : MonoBehaviour
         {
             StartCoroutine(DissolveCo());
         }
+        agent.destination = playerTransform.position;
     }
 
 
