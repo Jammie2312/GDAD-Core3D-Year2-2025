@@ -1127,8 +1127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefabs:
   - {fileID: 62126483750519664, guid: dac1caf9f740c7f459948d21270301a0, type: 3}
-  spawnArea: {x: 12.7, y: 0, z: 14.6}
-  playerCheckArea: {x: 12.85, y: 0, z: 16.1}
+  spawnArea: {x: 11.8, y: 0, z: 9.7}
+  playerCheckArea: {x: 11.8, y: 0, z: 9.7}
   startDelay: 1
   minSpawnInterval: 2
   maxSpawnInterval: 5
@@ -1146,7 +1146,7 @@ Transform:
   m_GameObject: {fileID: 304958967}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2666664, y: 0.042900063, z: 11.384899}
+  m_LocalPosition: {x: 4.46, y: 0.042900063, z: 11.384899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
