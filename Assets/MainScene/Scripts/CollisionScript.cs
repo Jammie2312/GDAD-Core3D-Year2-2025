@@ -53,16 +53,10 @@ public class CollisionScript : MonoBehaviour
     {
         Debug.Log("Colliding Check");
 
-        //if (Input.GetKey(KeyCode.Space))
-        //{
-        //    Debug.Log("Secondary");
-        //}
-
         if (other.gameObject.tag == "Collide" && flashlight.failSafe == true)
         {
             Debug.Log("2nd light check");
             StartCoroutine(DissolveCo());
-            //Destroy(other.gameObject);
         }
     }
 
