@@ -1130,9 +1130,9 @@ MonoBehaviour:
   spawnArea: {x: 11.8, y: 0, z: 9.7}
   playerCheckArea: {x: 11.8, y: 0, z: 9.7}
   startDelay: 1
-  minSpawnInterval: 2
-  maxSpawnInterval: 5
-  maxSpawnedObjects: 1000
+  minSpawnInterval: 5
+  maxSpawnInterval: 15
+  maxSpawnedObjects: 100
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -2584,7 +2584,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.472
+      value: -1.314
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
@@ -2594,7 +2594,7 @@ PrefabInstance:
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.556
+      value: 14.044
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
@@ -4556,7 +4556,7 @@ PrefabInstance:
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.472
+      value: -1.314
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
@@ -4566,7 +4566,7 @@ PrefabInstance:
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.556
+      value: 14.044
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
@@ -6841,9 +6841,9 @@ MonoBehaviour:
   spawnArea: {x: 6.77, y: 0, z: 5.73}
   playerCheckArea: {x: 6.77, y: 0, z: 5.73}
   startDelay: 1
-  minSpawnInterval: 2
-  maxSpawnInterval: 5
-  maxSpawnedObjects: 1000
+  minSpawnInterval: 5
+  maxSpawnInterval: 15
+  maxSpawnedObjects: 100
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -7507,7 +7507,7 @@ PrefabInstance:
     - target: {fileID: 3929371355523248483, guid: dac1caf9f740c7f459948d21270301a0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.065
+      value: -1.231
       objectReference: {fileID: 0}
     - target: {fileID: 3929371355523248483, guid: dac1caf9f740c7f459948d21270301a0,
         type: 3}
@@ -7517,7 +7517,7 @@ PrefabInstance:
     - target: {fileID: 3929371355523248483, guid: dac1caf9f740c7f459948d21270301a0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.999
+      value: 10.537
       objectReference: {fileID: 0}
     - target: {fileID: 3929371355523248483, guid: dac1caf9f740c7f459948d21270301a0,
         type: 3}
