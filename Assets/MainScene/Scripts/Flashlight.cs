@@ -18,11 +18,18 @@ public class Flashlight : MonoBehaviour
     public AudioSource clickSound;
     public AudioSource SizzSound;
     public bool failSafe = false;
+    public GameObject failSafeCollider;
 
     //2nd Light Duration
     [Range(0f, 5f)]
     public float failsafeDuration = 1f; // Cooldown in seconds between shots
     private float lastFlashTime = -100f; // Initialize to a low value
+
+
+    void Start()
+    {
+        failSafeCollider.SetActive(false);
+    }
 
     public void Update()
     {
@@ -43,8 +50,7 @@ public class Flashlight : MonoBehaviour
             }
         }
 
-
-            // Check for spacebar input and shoot if cooldown has elapsed
+        // Check for spacebar input and shoot if cooldown has elapsed
         if (Input.GetButton("Intense") && Time.time > lastFlashTime + failsafeDuration)
         {
 
@@ -52,6 +58,7 @@ public class Flashlight : MonoBehaviour
             {
                 failSafe = true;
                 flashlight = false;
+                failSafeCollider.SetActive(true);
 
                 SizzSound.Play();
                 SizzSound.volume = 1;
@@ -79,5 +86,6 @@ public class Flashlight : MonoBehaviour
         lightSource1.SetActive(false);
         flashlight = false;
         failSafe = false;
+        failSafeCollider.SetActive(false);
     }
 }

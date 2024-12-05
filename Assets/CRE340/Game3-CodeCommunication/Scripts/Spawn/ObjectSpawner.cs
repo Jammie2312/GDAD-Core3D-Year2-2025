@@ -56,7 +56,7 @@ public class ObjectSpawner : MonoBehaviour
         if (spawnedObjects.Count >= maxSpawnedObjects) return;
 
         // Check if the player is in the defined area
-        if (!IsPlayerInArea()) return;
+        //if (!IsPlayerInArea()) return;
 
         // Pick a random prefab from the array
         int randomIndex = Random.Range(0, objectPrefabs.Length);

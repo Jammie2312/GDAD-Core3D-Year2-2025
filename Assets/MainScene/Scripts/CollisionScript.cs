@@ -1,26 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Threading;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.InputSystem.Android;
-using UnityEngine.Rendering.Universal;
+
 
 public class CollisionScript : MonoBehaviour
 {
-    public bool light1 = false;    
-    public bool light2 = false;
+    //public GameObject light1;    
+    //public GameObject light2;
+
+    public Flashlight flashlight;
 
     public AudioSource growlSound;
 
     public SkinnedMeshRenderer skinnedMesh;
     public float dissolveRate = 0.0125f;
     public float refreshRate = 0.025f;
-    public int mainLight;
 
     private Material[] skinnedMaterials;
 
@@ -35,35 +31,38 @@ public class CollisionScript : MonoBehaviour
         if (skinnedMesh != null)
             skinnedMaterials = skinnedMesh.materials;
 
+        GameObject player = GameObject.FindWithTag("Player");
+        playerTransform = player.GetComponent<Transform>();
+        flashlight = player.GetComponent<Flashlight>(); 
         agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButton("Intense"))
         {
-            StartCoroutine(DissolveCo());
+            //StartCoroutine(DissolveCo());
         }
         agent.destination = playerTransform.position;
     }
 
 
 
-    void OnTriggerStay(UnityEngine.Collider other)
+    void OnTriggerEnter(UnityEngine.Collider other)
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Debug.Log("SecondaryStarterLight");
-            light1 = false;
-            light2 = true;
-        }
+        Debug.Log("Colliding Check");
 
-        if (other.gameObject.tag == "Enemy" && light2 == true)
+        //if (Input.GetKey(KeyCode.Space))
+        //{
+        //    Debug.Log("Secondary");
+        //}
+
+        if (other.gameObject.tag == "Collide" && flashlight.failSafe == true)
         {
+            Debug.Log("2nd light check");
+            StartCoroutine(DissolveCo());
             //Destroy(other.gameObject);
-            light1 = false;
-            light2 = false;
         }
     }
 
@@ -84,5 +83,9 @@ public class CollisionScript : MonoBehaviour
                 yield return new WaitForSeconds(refreshRate);
             }
         }
+
+        //yield return new WaitForSeconds(2f);
+        yield return new WaitForEndOfFrame();
+        Destroy(gameObject);
     }
 }
