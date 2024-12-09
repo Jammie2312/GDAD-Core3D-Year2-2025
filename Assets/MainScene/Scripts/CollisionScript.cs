@@ -14,6 +14,7 @@ public class CollisionScript : MonoBehaviour
 
     public AudioSource growlSound;
 
+
     public SkinnedMeshRenderer skinnedMesh;
     public float dissolveRate = 0.0125f;
     public float refreshRate = 0.025f;
@@ -58,7 +59,7 @@ public class CollisionScript : MonoBehaviour
     {
         Debug.Log("Colliding Check");
 
-        if (other.gameObject.tag == "Collide" && flashlight.failSafe == true)
+        if (other.gameObject.tag == "Collide" && flashlight.failSafe == true && NavCheck == true)
         {
             Debug.Log("2nd light check");
             StartCoroutine(DissolveCo());
@@ -73,6 +74,7 @@ public class CollisionScript : MonoBehaviour
             _animator.Play("Z_FallingForward");
             float counter = 0;
             NavCheck = false;
+
             while (skinnedMaterials[0].GetFloat("_DissolveAmount") < 1)
             {
                 counter += dissolveRate;
