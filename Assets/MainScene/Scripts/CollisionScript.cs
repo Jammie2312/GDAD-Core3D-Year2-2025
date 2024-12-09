@@ -24,7 +24,10 @@ public class CollisionScript : MonoBehaviour
 
 
     public Transform playerTransform;
+    
     NavMeshAgent agent;
+
+    public bool NavCheck = true;
 
     void Start()
     {
@@ -39,12 +42,14 @@ public class CollisionScript : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetButton("Intense"))
+        //if (Input.GetButton("Intense"))
+        //{
+        //    StartCoroutine(DissolveCo());
+        //}
+        if (NavCheck == true)
         {
-            //StartCoroutine(DissolveCo());
+            agent.destination = playerTransform.position;
         }
-        agent.destination = playerTransform.position;
     }
 
 
@@ -67,6 +72,7 @@ public class CollisionScript : MonoBehaviour
             growlSound.Play();
             _animator.Play("Z_FallingForward");
             float counter = 0;
+            NavCheck = false;
             while (skinnedMaterials[0].GetFloat("_DissolveAmount") < 1)
             {
                 counter += dissolveRate;
