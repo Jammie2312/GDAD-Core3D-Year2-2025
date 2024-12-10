@@ -27,7 +27,7 @@ public class JumpscareContoller : MonoBehaviour
 
     private IEnumerator CloseJumpscare()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         //jumpscareImage.enabled = false;
         SceneManager.LoadScene("UI");
     }

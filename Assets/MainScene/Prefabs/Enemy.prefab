@@ -47,12 +47,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.22093165, y: 0.19551004, z: 0.5109858}
-  m_Center: {x: -0.3895355, y: -0.0014442877, z: 0.6151241}
+  m_Size: {x: 0.22093165, y: 0.19551224, z: 0.2696073}
+  m_Center: {x: -0.3895355, y: -0.0014442877, z: 0.4944355}
 --- !u!1 &8589128723557690235
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +461,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.2
+  m_Speed: 0.8
   m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120

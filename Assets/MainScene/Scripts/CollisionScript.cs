@@ -10,7 +10,7 @@ public class CollisionScript : MonoBehaviour
     //public GameObject light1;    
     //public GameObject light2;
 
-    public Flashlight flashlight;
+    private Flashlight flashlight;
 
     public AudioSource growlSound;
 
