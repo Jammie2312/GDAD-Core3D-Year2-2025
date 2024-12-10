@@ -21,7 +21,6 @@ public class JumpscareContoller : MonoBehaviour
             jumpscareImage.sprite = jumpscareImage2;    
             jumpsource.PlayOneShot(jumpscareClip1);
             StartCoroutine(CloseJumpscare());
-            //SceneManager.LoadScene("UI");
         }
     }
 

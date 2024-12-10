@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 public class CollisionScript : MonoBehaviour
@@ -55,7 +56,7 @@ public class CollisionScript : MonoBehaviour
 
 
 
-    void OnTriggerEnter(UnityEngine.Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("Colliding Check");
 
@@ -70,10 +71,10 @@ public class CollisionScript : MonoBehaviour
     {
         if (skinnedMaterials.Length > 0)
         {
+            NavCheck = false;
             growlSound.Play();
             _animator.Play("Z_FallingForward");
             float counter = 0;
-            NavCheck = false;
 
             while (skinnedMaterials[0].GetFloat("_DissolveAmount") < 1)
             {
