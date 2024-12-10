@@ -11,6 +11,8 @@ public class CollisionScript : MonoBehaviour
 {
     private Flashlight flashlight;
 
+    NavMeshAgent agent;
+
     //Enemy death properties
     public AudioSource growlSound;
     public SkinnedMeshRenderer skinnedMesh;
@@ -22,8 +24,6 @@ public class CollisionScript : MonoBehaviour
     //Players position
     public Transform playerTransform;
     
-    NavMeshAgent agent;
-
     //Checks
     public bool NavCheck = true;
     public bool Alive = true;
@@ -49,13 +49,10 @@ public class CollisionScript : MonoBehaviour
         }
     }
 
-
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Collide" && flashlight.failSafe == true && NavCheck == true && Alive == true)
         {
-            this.gameObject.tag = "DeadEnemy";
             Debug.Log("2nd light check");
             StartCoroutine(DissolveCo());
             Alive = false;

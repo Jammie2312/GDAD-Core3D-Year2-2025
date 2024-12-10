@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - CinemachineTarget
   - Collide
+  - DeadEnemy
+  - Image
+  - ImageStore
   layers:
   - Default
   - TransparentFX

@@ -16,8 +16,6 @@ public class JumpscareContoller : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.tag = "DeadEnemy";
-            //jumpscareImage.enabled = true;
             jumpscareStore.SetActive(true);
             jumpscareImage.sprite = jumpscareSprite;
             jumpsource.PlayOneShot(jumpscareClip1);

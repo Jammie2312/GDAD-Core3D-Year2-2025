@@ -9,10 +9,10 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject[] objectPrefabs;  // Array of prefabs to spawn
     public Vector3 spawnArea;           // x, y, z (width, height, depth) of the spawn area
     public Vector3 playerCheckArea;     // x, y, z (width, height, depth) of the player check area
-    public float startDelay = 1f;       // Delay before the first spawn
-    public float minSpawnInterval = 2f; // Minimum spawn interval (2 seconds)
-    public float maxSpawnInterval = 5f; // Maximum spawn interval (5 seconds)
-    public int maxSpawnedObjects = 10;  // Maximum number of spawned objects
+    public float startDelay;       // Delay before the first spawn
+    public float minSpawnInterval; // Minimum spawn interval (2 seconds)
+    public float maxSpawnInterval; // Maximum spawn interval (5 seconds)
+    public int maxSpawnedObjects;  // Maximum number of spawned objects
     public LayerMask playerLayer;       // Layer mask to identify the player
 
     // List to store references to all spawned objects

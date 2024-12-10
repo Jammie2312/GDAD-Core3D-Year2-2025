@@ -50,7 +50,7 @@ public class Flashlight : MonoBehaviour
             }
         }
 
-        // Check for spacebar input and shoot if cooldown has elapsed
+        // Check for spacebar input and off if cooldown has elapsed
         if (Input.GetButton("Intense") && Time.time > lastFlashTime + failsafeDuration)
         {
 
@@ -66,9 +66,7 @@ public class Flashlight : MonoBehaviour
                 Debug.Log("failsafe");
                 lightSource2.SetActive(true);
                 lightSource1.SetActive(false);
-                // Update the last flash time to enforce cooldown
                 lastFlashTime = Time.time;   
-
                 StartCoroutine(FailSafe());
             }
         }
