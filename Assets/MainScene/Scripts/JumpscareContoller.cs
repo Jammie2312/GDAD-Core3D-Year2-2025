@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class JumpscareContoller : MonoBehaviour
 {
     [SerializeField] public Image jumpscareImage;
-    [SerializeField] public Sprite jumpscareImage2;
-    [SerializeField] public GameObject jumpscareImage3;
+    [SerializeField] public Sprite jumpscareSprite;
+    [SerializeField] public GameObject jumpscareStore;
     public AudioClip jumpscareClip1;
     public AudioSource jumpsource;
 
@@ -16,9 +16,10 @@ public class JumpscareContoller : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            other.gameObject.tag = "DeadEnemy";
             //jumpscareImage.enabled = true;
-            jumpscareImage3.SetActive(true);
-            jumpscareImage.sprite = jumpscareImage2;    
+            jumpscareStore.SetActive(true);
+            jumpscareImage.sprite = jumpscareSprite;
             jumpsource.PlayOneShot(jumpscareClip1);
             StartCoroutine(CloseJumpscare());
         }

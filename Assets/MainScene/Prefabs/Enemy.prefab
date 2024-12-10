@@ -443,7 +443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6028312566516f43aaa494eb42430a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashlight: {fileID: 0}
   growlSound: {fileID: 191940977648753046}
   skinnedMesh: {fileID: 5951929214782208501}
   dissolveRate: 0.0125
@@ -451,6 +450,12 @@ MonoBehaviour:
   _animator: {fileID: 2375763593035231929}
   playerTransform: {fileID: 0}
   NavCheck: 1
+  Alive: 1
+  jumpscareImage: {fileID: 0}
+  jumpscareImage2: {fileID: 21300000, guid: 48184dbdb044c9742aa2cc9a6042d912, type: 3}
+  jumpscareImage3: {fileID: 0}
+  jumpscareClip1: {fileID: 0}
+  jumpsource: {fileID: 0}
 --- !u!195 &2132981180966704358
 NavMeshAgent:
   m_ObjectHideFlags: 0

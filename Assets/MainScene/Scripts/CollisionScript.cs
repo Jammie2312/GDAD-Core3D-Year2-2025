@@ -4,38 +4,36 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class CollisionScript : MonoBehaviour
 {
-    //public GameObject light1;    
-    //public GameObject light2;
-
     private Flashlight flashlight;
 
+    //Enemy death properties
     public AudioSource growlSound;
-
-
     public SkinnedMeshRenderer skinnedMesh;
     public float dissolveRate = 0.0125f;
     public float refreshRate = 0.025f;
-
     private Material[] skinnedMaterials;
-
     public Animator _animator;
 
-
+    //Players position
     public Transform playerTransform;
     
     NavMeshAgent agent;
 
+    //Checks
     public bool NavCheck = true;
+    public bool Alive = true;
 
     void Start()
     {
         if (skinnedMesh != null)
             skinnedMaterials = skinnedMesh.materials;
 
+        //getting the components for enemy
         GameObject player = GameObject.FindWithTag("Player");
         playerTransform = player.GetComponent<Transform>();
         flashlight = player.GetComponent<Flashlight>(); 
@@ -44,10 +42,7 @@ public class CollisionScript : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetButton("Intense"))
-        //{
-        //    StartCoroutine(DissolveCo());
-        //}
+        //Enemy follows players position
         if (NavCheck == true)
         {
             agent.destination = playerTransform.position;
@@ -58,17 +53,17 @@ public class CollisionScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Colliding Check");
-
-        if (other.gameObject.tag == "Collide" && flashlight.failSafe == true && NavCheck == true)
+        if (other.gameObject.tag == "Collide" && flashlight.failSafe == true && NavCheck == true && Alive == true)
         {
+            this.gameObject.tag = "DeadEnemy";
             Debug.Log("2nd light check");
             StartCoroutine(DissolveCo());
+            Alive = false;
         }
     }
 
     IEnumerator DissolveCo()
-    {
+    { 
         if (skinnedMaterials.Length > 0)
         {
             NavCheck = false;
@@ -87,7 +82,7 @@ public class CollisionScript : MonoBehaviour
             }
         }
 
-        //yield return new WaitForSeconds(2f);
+        //Delay to wait unitl enemy is dissolved
         yield return new WaitForEndOfFrame();
         Destroy(gameObject);
     }
