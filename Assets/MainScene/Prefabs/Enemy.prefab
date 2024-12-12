@@ -451,11 +451,6 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   NavCheck: 1
   Alive: 1
-  jumpscareImage: {fileID: 0}
-  jumpscareImage2: {fileID: 21300000, guid: 48184dbdb044c9742aa2cc9a6042d912, type: 3}
-  jumpscareImage3: {fileID: 0}
-  jumpscareClip1: {fileID: 0}
-  jumpsource: {fileID: 0}
 --- !u!195 &2132981180966704358
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -467,7 +462,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 0.8
-  m_Acceleration: 3
+  m_Acceleration: 600
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0.4
